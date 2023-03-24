@@ -11,4 +11,18 @@
 # problem to get a good feel for how to solve it.
 
 def can_make_pasta(ingredients):
-    pass
+    completed_list = []
+    for item in ingredients:
+        if item == "flour" or item == "eggs" or item == "oil":
+            completed_list.append(item)
+    if len(completed_list) == 3:
+        print("You can make pasta!")
+    else:
+        print("You do not have all of the ingredients to make pasta.")
+
+# Test Cases:
+# can_make_pasta(ingredients=["oil", "flour"])
+# can_make_pasta(ingredients=["oil", "eggs", "flour"])
+# can_make_pasta(ingredients=["water", "eggs", "flour"])
+# can_make_pasta(ingredients=["rosemary", "oil", "eggs", "sugar", "flour"])
+# can_make_pasta(ingredients=["rosemary", "oil", "eggs", "sugar"])
