@@ -8,4 +8,13 @@
 # problem to get a good feel for how to solve it.
 
 def is_divisible_by_5(number):
-    pass
+    # set up condition if number is divisble by 5 to return buzz
+    if number % 5 == 0:
+        print("buzz")
+    else:
+        print(number)
+
+# # Test Cases
+# is_divisible_by_5(3)
+# is_divisible_by_5(5)
+# is_divisible_by_5(225)
