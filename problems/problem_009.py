@@ -13,4 +13,15 @@
 # problem to get a good feel for how to solve it.
 
 def is_palindrome(word):
-    pass
+    # first reverse the word and store it in a new variable
+    reversed_word = word[::-1]
+    # set up condition if the reversed word is equivalent to word
+    if reversed_word == word:
+        print(word + " is a palindrome!")
+    else:
+        print(word + " is not a palindrome.")
+
+# Test Cases:
+# is_palindrome(word="tree")
+# is_palindrome(word="racecar")
+# is_palindrome(word="kayak")
