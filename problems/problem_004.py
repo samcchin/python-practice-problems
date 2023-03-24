@@ -22,7 +22,7 @@ def max_of_three(value1, value2, value3):
     else:
         print(value3)
 
-#Test Case:
+# Test Case:
 # max_of_three(7,5,7)
 # max_of_three(1,2,3)
 # max_of_three(9,4,7)
