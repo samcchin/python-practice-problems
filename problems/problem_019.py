@@ -15,4 +15,29 @@
 #   * y is less than or equal to rect_y + rect_height
 
 def is_inside_bounds(x, y, rect_x, rect_y, rect_width, rect_height):
-    pass
+    # Create variables for ease of reference
+    width = rect_x + rect_width
+    height = rect_y + rect_height
+    # Set up condition statement that all four are met
+    if x >= rect_x and y >= rect_y and x <= width and y <= height:
+        # return True
+        print("is inside bounds")
+
+    else:
+        # return False
+        print("is outside bounds")
+
+# Test Cases
+# is_inside_bounds(x=10,
+#                  y=20,
+#                  rect_x=2,
+#                  rect_y=8,
+#                  rect_width=13,
+#                  rect_height=20)
+
+# is_inside_bounds(x=10,
+#                  y=20,
+#                  rect_x=21,
+#                  rect_y=8,
+#                  rect_width=13,
+#                  rect_height=20)
