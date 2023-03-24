@@ -11,4 +11,13 @@
 # problem to get a good feel for how to solve it.
 
 def is_divisible_by_3(number):
-    pass
+    # Set up condition statement if number is divisible by 3
+    if number % 3 == 0:
+        print("fizz")
+    else:
+        print(number)
+
+# Test Cases
+# is_divisible_by_3(3)
+# is_divisible_by_3(27)
+# is_divisible_by_3(2)
