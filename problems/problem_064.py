@@ -13,3 +13,21 @@
 #                lows:  [72, 78, 70, 70]
 #       result:         [ 8,  3,  5, 10]
 
+
+def temperature_differences(highs, lows):
+    difference_list = []
+
+    for index in range(0, len(highs)):
+        difference = highs[index] - lows[index]
+        difference_list.append(difference)
+    print(difference_list)
+
+# Test Case
+# highs = [80, 81, 75, 80]
+# lows = [72, 78, 70, 70]
+# temperature_differences(highs,lows)
+
+# Set up new list to store difference
+# Using for loop, subtract the highs[i] - lows[i]
+# Store difference in new list
+# Return new list
