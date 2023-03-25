@@ -16,4 +16,20 @@
 # problem to get a good feel for how to solve it.
 
 def sum_of_first_n_even_numbers(n):
-    pass
+    if n < 0:
+        print("None")
+    else:
+        sum = 0
+        while n >= 0 and n % 2 == 0:
+            sum += n
+            n -= 1
+        print(sum)
+
+# Test Cases:
+# sum_of_first_n_even_numbers(-1)
+# sum_of_first_n_even_numbers(0)
+# sum_of_first_n_even_numbers(1)
+# sum_of_first_n_even_numbers(2)
+# sum_of_first_n_even_numbers(5)
+# sum_of_first_n_even_numbers(8)
+# sum_of_first_n_even_numbers(10)
