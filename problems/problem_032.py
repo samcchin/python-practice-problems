@@ -16,4 +16,18 @@
 # problem to get a good feel for how to solve it.
 
 def sum_of_first_n_numbers(limit):
-    pass
+    if limit < 0:
+        print(None)
+    else:
+        total_sum = 0
+        while limit >= 0:
+            total_sum += limit
+            limit -= 1
+        print(total_sum)
+
+# Test Cases:
+# sum_of_first_n_numbers(-1)
+# sum_of_first_n_numbers(0)
+# sum_of_first_n_numbers(1)
+# sum_of_first_n_numbers(2)
+# sum_of_first_n_numbers(5)
