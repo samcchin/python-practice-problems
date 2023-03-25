@@ -22,4 +22,16 @@
 
 
 def count_letters_and_digits(s):
-    pass
+    character_count = 0
+    digit_count = 0
+
+    for item in s:
+        if item.isalpha() is True:
+            character_count += 1
+        elif item.isdigit() is True:
+            digit_count += 1
+    return character_count, digit_count
+
+# # Test Cases:
+# count_letters_and_digits("test2five6")
+# count_letters_and_digits("testabc123456")
