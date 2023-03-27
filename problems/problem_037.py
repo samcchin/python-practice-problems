@@ -24,4 +24,17 @@
 #     result: "   19"
 
 def pad_left(number, length, pad):
-    pass
+    new_string = ""
+    length_of_pad = length - len(str(number))
+
+    for item in range(0, length_of_pad):
+        new_string += str(pad)
+    new_string += str(number)
+    return new_string
+
+
+# Test Examples:
+print(pad_left(10, 4, "*"))  # result: "**10"
+print(pad_left(10, 5, "0"))  # result: "00010"
+print(pad_left(1000, 3, "0"))  # result: "1000"
+print(pad_left(19, 5, " "))  # result: "   19"
