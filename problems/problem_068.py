@@ -24,16 +24,37 @@
 #    print(person.taste("sauerkraut"))  # Prints False, in the hated list
 #    print(person.taste("pizza"))       # Prints True, in the loved list
 
+class Person:
+    def __init__(person, name, hated_foods, loved_foods):
+        person.name = name
+        person.hated_foods = hated_foods
+        person.loved_foods = loved_foods
+
+    def taste(person, food):
+        if food in person.hated_foods:
+            return False
+        elif food in person.loved_foods:
+            return True
+        else:
+            return None
+
+
+person = Person("Malik", ["cottage cheese", "sauerkraut"],
+                ["pizza", "schnitzel"])
+
+print(person.taste("lasagna"))     # Prints None, not in either list
+print(person.taste("sauerkraut"))  # Prints False, in the hated list
+print(person.taste("pizza"))       # Prints True, in the loved list
 
 # class Person
-    # method initializer with name, hated foods list, and loved foods list
-        # self.name = name
-        # self.hated_foods = hated_foods
-        # self.loved_foods = loved_foods
-    # method taste(self, food)
-        # if food is in self.hated_foods
-            # return False
-        # otherwise, if food is in self.loved_foods
-            # return True
-        # otherwise
-            # return None
+#     method initializer with name, hated foods list, and loved foods list
+#         self.name = name
+#         self.hated_foods = hated_foods
+#         self.loved_foods = loved_foods
+#     method taste(self, food)
+#         if food is in self.hated_foods
+#             return False
+#         otherwise, if food is in self.loved_foods
+#             return True
+#         otherwise
+#             return None
