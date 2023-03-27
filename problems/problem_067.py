@@ -23,10 +23,10 @@
 # There is pseudocode availabe for you to guide you
 
 # class Employee
-    # method initializer method with required state
-    # parameters first name and last name
-        # set self.first_name = first_name
-        # set self.last_name = last_name
+# method initializer method with required state
+# parameters first name and last name
+#     set self.first_name = first_name
+#     set self.last_name = last_name
 
 class Employee:
     def __init__(employee, first_name, last_name):
@@ -37,7 +37,8 @@ class Employee:
         return employee.first_name + " " + employee.last_name
 
     def get_email(employee):
-        return employee.first_name.lower() + "." + employee.last_name.lower() + "@company.com"
+        return employee.first_name.lower() + "." + employee.last_name.lower()
+    + "@company.com"
 
 
 # Test Example:
