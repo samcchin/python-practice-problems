@@ -36,11 +36,14 @@ class Book:
         return "Author: " + author
     # method get_title(self)
         # returns "Title: " + self.title
+
     def get_title(self):
         title = self.title
         return "Title: " + title
 
-#Test Case:
+# Test Case:
+
+
 book = Book("Natalie Zina Walschots", "Hench")
 print(book.get_author())  # prints "Author: Natalie Zina Walschots"
 print(book.get_title())   # prints "Title: Hench"
