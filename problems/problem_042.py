@@ -13,4 +13,18 @@
 # Look up the zip function to help you with this problem.
 
 def pairwise_add(list1, list2):
-    pass
+    # Create new list to store sum of each corresponding element
+    summed_list = []
+    # Zip the two lists so that they become tuples within a list
+    new_list = list(zip(list1, list2))
+    # Loop through the zipped list
+    for item in new_list:
+        # Sum the value at the zero index and first index within the tuple
+        sum = item[0]+item[1]
+        # Add the sum value into the created list
+        summed_list.append(sum)
+    print(summed_list)
+
+# # Test Case:
+# pairwise_add([1, 2, 3, 4], [4, 5, 6, 7])
+# pairwise_add([100, 200, 300],[ 10,   1, 180])
