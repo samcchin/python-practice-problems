@@ -32,6 +32,7 @@ def count_letters_and_digits(s):
             digit_count += 1
     return character_count, digit_count
 
-# # Test Cases:
-# count_letters_and_digits("test2five6")
-# count_letters_and_digits("testabc123456")
+
+# Test Cases:
+print(count_letters_and_digits("test2five6"))
+print(count_letters_and_digits("testabc123456"))
