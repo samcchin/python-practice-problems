@@ -23,5 +23,27 @@
 # at the last one you just wrote unless you really must.
 
 
+class BankAccount:
+    def __init__(account, balance):
+        account.balance = balance
+
+    def get_balance(account):
+        return account.balance
+
+    def deposit(account, amount):
+        account.balance += amount
+        return account.balance
+
+    def withdraw(account, amount):
+        account.balance -= amount
+        return account.balance
 
 
+# Test Example:
+account = BankAccount(100)
+
+print(account.get_balance())  # prints 100
+account.withdraw(50)
+print(account.get_balance())  # prints 50
+account.deposit(120)
+print(account.get_balance())  # prints 170
