@@ -24,5 +24,21 @@
 # at the last one you just wrote unless you really must.
 
 
+class Employee:
+    def __init__(employee, first_name, last_name):
+        employee.first_name = first_name
+        employee.last_name = last_name
+
+    def get_fullname(employee):
+        return employee.first_name + " " + employee.last_name
+
+    def get_email(employee):
+        return employee.first_name.lower() + "." + employee.last_name.lower()
+    + "@company.com"
 
 
+# Test Example"
+employee = Employee("Duska", "Ruzicka")
+
+print(employee.get_fullname())  # prints "Duska Ruzicka"
+print(employee.get_email())     # prints "duska.ruzicka@company.com"
