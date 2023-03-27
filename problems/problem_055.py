@@ -28,3 +28,32 @@
 #     * input: 10
 #       returns:  "X"
 
+roman_dict = {
+    1: "I",
+    2: "II",
+    3: "III",
+    4: "IV",
+    5: "V",
+    6: "VI",
+    7: "VII",
+    8: "VIII",
+    9: "IX",
+    10: "X"
+}
+
+
+def simple_roman(key):
+    print(roman_dict[key])
+
+# # Test Cases
+# simple_roman(1)
+# simple_roman(2)
+# simple_roman(3)
+# simple_roman(4)
+# simple_roman(5)
+# simple_roman(6)
+# simple_roman(7)
+# simple_roman(8)
+# simple_roman(9)
+# simple_roman(10)
+# # simple_roman(12)
