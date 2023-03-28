@@ -22,3 +22,20 @@
 #
 # You may want to look up the ".strip()" method for the string.
 
+def group_cities_by_state(cities_list):
+    # Creates an empty dictionary to store values
+    city_state_dict = {}
+    # Loop through each city in the list input
+    for city in cities_list:
+        name, state = city.split(", ")
+        state = state.strip()
+        if state not in city_state_dict:
+            city_state_dict[state] = []
+        city_state_dict[state].append(name)
+    return city_state_dict
+
+
+# Test Case:
+print(group_cities_by_state(["San Antonio, TX"]))
+print(group_cities_by_state(["Springfield, MA", "Boston, MA"]))
+print(group_cities_by_state(["Cleveland, OH", "Columbus, OH", "Chicago, IL"]))
