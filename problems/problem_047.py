@@ -13,4 +13,23 @@
 # like ".isalpha", ".isdigit", ".isupper", and ".islower"
 
 def check_password(password):
-    pass
+    has_lowercase_letter = False
+    has_uppercase_letter = False
+    has_digit = False
+    has_special_char = False
+    for char in password:
+        if char.isalpha():
+            if char.isupper():
+                has_uppercase_letter = True
+            else:
+                has_lowercase_letter = True
+        elif char.isdigit():
+            has_digit = True
+        elif char == "$" or char == "!" or char == "@":
+            has_special_char = True
+    return (len(password) >= 6
+            and len(password) <= 12
+            and has_lowercase_letter
+            and has_uppercase_letter
+            and has_digit
+            and has_special_char)
