@@ -18,19 +18,18 @@
 # You may want to look at the built-in "abs" function
 
 
-def biggest_gap(list):
-    num_difference = 0
-    for i in range(0, len(list)):
-        gap = abs(list[i] - list[i+1])
-    print(gap)
-    #     if  > num_difference:
-    #         num_difference = ab
-    #     else:
-    #         num_difference
-    # return num_difference
+def biggest_gap(nums):
+    difference = 0
+    for i in range(0, len(nums)-1):
+        gap = abs(nums[i] - nums[i+1])
+        if gap > difference:
+            difference = gap
+        else:
+            difference
+    print(difference)
 
 
-# Test Cases:
+# Test Cases
 print(biggest_gap([1, 3, 5, 7]))
 print(biggest_gap([1, 11, 9, 20, 0]))
 print(biggest_gap([1, 3, 100, 103, 106]))
