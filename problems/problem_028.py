@@ -10,5 +10,19 @@
 #
 # If the list is empty, then return the empty string.
 
-def remove_duplicate_letters(s):
-    pass
+def remove_duplicate_letters(string):
+    # create new string to fill in
+    # loop through string, s
+    # if it does not exist in string, add to new string
+    deduped_string = ""
+    for letter in string:
+        if letter not in deduped_string:
+            deduped_string += letter
+    return deduped_string
+
+
+# Test Cases:
+print(remove_duplicate_letters("abc"))
+print(remove_duplicate_letters("abcabc"))
+print(remove_duplicate_letters("abccba"))
+print(remove_duplicate_letters("abccbad"))
